@@ -1,5 +1,6 @@
 import { useProduct } from "medusa-react"
-import style from './App.module.scss'
+import style from "./App.module.scss"
+
 
 function App() {
 
