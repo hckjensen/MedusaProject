@@ -1,0 +1,23 @@
+@use "../../styles/_variables" as vars;
+
+.footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    color: vars.$white-text;
+    background-color: vars.$black-background;
+    font-family: vars.$inika;
+
+    ul {
+
+        list-style: none;
+
+        a {
+            color: vars.$white-text;
+            text-decoration: none;
+        }
+
+    }
+
+
+}
