@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { CartProvider, MedusaProvider } from 'medusa-react'
 import { QueryClient } from '@tanstack/react-query'
+import { StoreContextProvider } from './context/StoreContext.jsx'
 
 const queryClient = new QueryClient()
 
@@ -15,7 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       baseUrl="http://localhost:9000"
     >
       <CartProvider>
-        <App />
+        <StoreContextProvider>
+          <App />
+        </StoreContextProvider>
       </CartProvider>
     </MedusaProvider>
 

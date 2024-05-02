@@ -16,7 +16,11 @@ const Card = ({ title, description, subDescription }) => {
 
 }
 
-Card.propTypes = { title: PropTypes.string, description: PropTypes.string, subDescription: PropTypes.string }
+Card.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    subDescription: PropTypes.string
+}
 
 export default Card
 
