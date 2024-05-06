@@ -1,0 +1,9 @@
+@use "../../styles/variables" as vars;
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    background-color: #111;
+}

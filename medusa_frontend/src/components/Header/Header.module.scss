@@ -1,0 +1,22 @@
+@use "../../styles/variables" as vars;
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 655px;
+    // background-image: url('../../assets/images/header.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+        margin: 0 auto;
+        width: 900px;
+        font-size: 128px;
+        font-weight: 400;
+        color: vars.$white-text;
+        font-family: vars.$licorice;
+        line-height: 160px;
+        text-align: center;
+
+    }
+}

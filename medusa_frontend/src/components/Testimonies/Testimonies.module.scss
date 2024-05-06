@@ -1,0 +1,46 @@
+@use "../../styles/variables.scss" as vars;
+
+
+.testimonies {
+    margin-top: 20px;
+
+    .testimoniesContainer {
+        display: flex;
+        margin: 0 200px;
+
+
+        .testimony {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.4rem;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 300px;
+            padding: 20px;
+
+        }
+    }
+
+
+    h2 {
+        font-size: 128px;
+        font-weight: 400;
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        font-family: vars.$licorice;
+    }
+
+    h3 {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: vars.$inika;
+    }
+
+    p {
+
+        font-family: vars.$inika;
+    }
+}

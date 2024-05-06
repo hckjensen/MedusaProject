@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Layout from "./layout/Layout"
 import FrontPage from "./pages/FrontPage"
-
 import ProductPage from "./pages/ProductPage"
 
 function App() {
@@ -10,8 +10,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<FrontPage />} />
-          <Route path="/products" element={<ProductPage />} />
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<FrontPage />} />
+            <Route path="/products" element={<ProductPage />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
