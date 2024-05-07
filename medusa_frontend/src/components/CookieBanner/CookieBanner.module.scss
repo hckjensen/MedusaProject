@@ -1,0 +1,20 @@
+.cookieBanner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookieBanner p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.cookieBanner button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
