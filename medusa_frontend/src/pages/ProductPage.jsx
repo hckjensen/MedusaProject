@@ -1,6 +1,6 @@
-import { useCart, useRegions, useProducts, formatVariantPrice } from "medusa-react"
+import { useRegions, useProducts } from "medusa-react"
 import style from "../App.module.scss"
-import Cart from "../components/Cart/Cart"
+import Cart from "../components/Cart/CartModal"
 import Card from "../components/Cards/Card";
 import Header from "../components/Header/Header";
 import Seperator from "../components/Seperator/Seperator";

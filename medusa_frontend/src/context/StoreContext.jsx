@@ -7,6 +7,7 @@ const StoreContext = createContext();
 export const StoreContextProvider = ({ children }) => {
 
     const [cart, setCart] = useState([])
+    const [showModal, setShowModal] = useState(false)
     const [region, setRegion] = useState()
 
     const { createCart } = useCart()
@@ -24,7 +25,7 @@ export const StoreContextProvider = ({ children }) => {
     return (
 
 
-        <StoreContext.Provider value={{ cart, setCart, region, setRegion }}>
+        <StoreContext.Provider value={{ cart, setCart, region, setRegion, showModal, setShowModal }}>
             {children}
         </StoreContext.Provider>
     );

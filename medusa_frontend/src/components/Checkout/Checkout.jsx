@@ -4,7 +4,7 @@ import StoreContext from "../../context/StoreContext";
 
 const Checkout = () => {
 
-    const { cart, setCart } = useContext(StoreContext)
+    const { cart } = useContext(StoreContext)
     const formItems = [
         {
             label: "First Name",
