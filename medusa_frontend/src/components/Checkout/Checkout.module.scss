@@ -1,0 +1,72 @@
+@use "../../styles/_variables" as vars;
+
+
+.container {
+
+    margin-bottom: 100px;
+
+    h2 {
+        font-family: vars.$licorice;
+        font-weight: 400;
+        font-size: 128px;
+        margin-top: 300px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: vars.$inika;
+
+        .form {
+            display: flex;
+            justify-content: center;
+
+            form {
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+
+
+                    input {
+
+                        margin: 10px 0;
+                        padding: 10px;
+                        border: 1px solid black;
+                        border-radius: 5px;
+                        width: 600px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+        .cart {
+
+
+
+            .cartItem {
+                display: flex;
+
+                gap: 1rem;
+                font-size: 1.5rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 10px;
+                border-bottom: 1px solid black;
+                width: 70%;
+
+                p:nth-child(3) {
+
+                    margin-left: auto;
+
+                }
+            }
+
+        }
+    }
+
+}

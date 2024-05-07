@@ -1,0 +1,52 @@
+@use "../../styles/variables.scss" as vars;
+
+
+.salesPitch {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 100px;
+    gap: 3rem;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    * {
+        margin-top: 40px;
+    }
+
+    .pitchItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    h2 {
+        font-size: 64px;
+        font-weight: 400;
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-family: vars.$licorice;
+    }
+
+
+
+    p {
+
+        font-family: vars.$inika;
+        width: 400px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 500px;
+        height: 320px;
+        border-radius: 10px;
+    }
+}

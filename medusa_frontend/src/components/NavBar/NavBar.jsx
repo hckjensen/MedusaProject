@@ -1,6 +1,7 @@
 import style from './NavBar.module.scss';
 import Icon from "../../assets/icons/cup.png"
 import Logo from "../Logo/Logo";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -9,13 +10,11 @@ const NavBar = () => {
             <div>
 
             </div>
-            <Logo image={Icon} title="Sunshine Coffee" />
+            <Logo className={style.logo} image={Icon} title="Sunshine Coffee" />
             <div className={style.menu}>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <Link to="/checkout"> checkout</Link>
+                    <Link to="/products"> products</Link>
                 </ul>
             </div>
         </div>

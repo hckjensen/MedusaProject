@@ -1,19 +1,25 @@
+@use "styles/_variables" as vars;
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.card {
-  padding: 20px;
-  width: 500px;
-  border: 2px solid black;
-  border-radius: 5px;
+.productHeading {
 
-  img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
+  font-size: 128px;
+  font-weight: 400;
+  font-family: vars.$licorice;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+
+.cardContainer {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: space-around;
+
 }

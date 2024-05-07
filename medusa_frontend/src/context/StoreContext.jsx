@@ -6,7 +6,7 @@ const StoreContext = createContext();
 
 export const StoreContextProvider = ({ children }) => {
 
-    const [cart, setCart] = useState()
+    const [cart, setCart] = useState([])
     const [region, setRegion] = useState()
 
     const { createCart } = useCart()

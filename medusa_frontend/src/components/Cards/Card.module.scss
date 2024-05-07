@@ -1,12 +1,52 @@
+@use "../../styles/_variables" as vars;
+
+
 .card {
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
 
 
-    padding: 20px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 300px;
-    border: 2px solid black;
-    border-radius: 5px;
+
+    h2 {
+        font-size: 96px;
+        font-weight: 400;
+        margin: 40px 0;
+        font-family: vars.$licorice;
+        text-align: center;
+
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 20px 0;
+        font-family: vars.$inika;
+
+        &:first-of-type {
+            margin-top: 40px;
+            height: 400px;
+        }
+    }
 
 
+    img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 350px;
+        height: 50px;
+        border-radius: 5px;
+        color: vars.$white-text;
+        background-color: vars.$black-background;
+        font-family: vars.$inika;
+        font-size: 20px;
+        cursor: pointer;
+    }
 }
